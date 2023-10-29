@@ -2,22 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
+use App\Models\Tag;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class PostsController extends Controller
+class TagController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // $post = Post::find(40)->delete();
-        // $post = Post::withTrashed()->where('id' , 40)->restore();
-        $post = Post::find(40);
-       
-        return response()->json($post, 200);
+        //
     }
 
     /**
@@ -31,7 +26,7 @@ class PostsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Post $post)
+    public function show(Tag $tag)
     {
         //
     }
@@ -39,7 +34,7 @@ class PostsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, Tag $tag)
     {
         //
     }
@@ -47,7 +42,7 @@ class PostsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Post $post)
+    public function destroy(Tag $tag)
     {
         //
     }
